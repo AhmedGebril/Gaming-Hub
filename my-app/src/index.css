@@ -1,0 +1,260 @@
+:root{
+    --font-family:'Montserrat', sans-serif;
+    --light-color:#fff;
+    --Main-color:#f1356d;
+}
+body{
+    background-color:#252A34 ;
+}
+h3,h1,h2,h3,h4,h5,h6,p{
+    color:white;
+}
+    
+.navbar-brand{
+    color:var(--Main-color)!important;
+}
+.active{
+    text-decoration: none;
+}
+.diff{
+    color:var(--Main-color)
+}
+.ratings{
+    position: absolute !important;
+    right:0;
+    top:0;
+    background-color: red;
+    color:white;
+    opacity: 0 !important;
+    transition: .6s;
+}
+p{
+    margin:0;
+    padding:0;
+}
+.description{
+    font-size:2rem;
+}
+.game-tags{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.remove-tags{
+    cursor:pointer;
+    text-decoration: underline !important;
+    transition: .5s;
+}
+.remove-tags:hover{
+    color:#EDDBC7 !important;
+}
+.home-tags{
+    transition: .5s;
+}
+.home-tags:hover{
+    color:#EDDBC7 !important;
+}
+
+.already{
+    cursor: pointer;
+}
+.offline{
+    z-index: 999;
+}
+
+.card{
+    transition: .6s;
+}
+.card-title{
+    opacity: 0!important;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.back{
+    cursor: pointer;
+}
+.card-img{
+    transition: .6s;
+}
+.card:hover .card-img{
+    opacity: .3;
+}
+.card:hover .ratings{
+    opacity: 1 !important;
+    }
+.card:hover .card-title{
+opacity: 1 !important;
+}
+.signin-back{
+    position: absolute;
+    left: 20rem;
+    cursor: pointer;
+}
+
+.nav-link{
+    transition: .6s;
+}
+.nav-link:hover{
+    transform: scale(1.1);
+    transform: translateY(-10px);
+    color:#EDDBC7 !important;
+}
+@media (max-width:766px) {
+    .card-img{
+      min-width: 100%;
+    }
+}
+.close-icon{
+    position: absolute;
+    top:5px;
+    right:8px;
+    cursor: pointer;
+}
+.loading-screen1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loading-spinner1 {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #f00;
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+    animation: spin1 1s linear infinite;
+    margin-bottom: 2vh;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 16px rgba(255, 0, 0, 0.6);
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-screen1 p {
+    font-size: 4vh;
+    margin-top: 0;
+    margin-bottom: 4vh;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .loading-spinner1 {
+      width: 64px;
+      height: 64px;
+    }
+  
+    .loading-screen1 p {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @keyframes spin1 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner {
+    border: 4px solid #fff;
+    border-top: 4px solid #0d6efd;
+    border-radius: 50%;
+    width: 10vmin;
+    height: 10vmin;
+    animation: spin 1s linear infinite;
+    margin-right: 1rem;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-text {
+    color: #fff;
+    font-size: 2vmin;
+    font-weight: bold;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .spinner {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .loading-text {
+      font-size: 2rem;
+    }
+  }
+  .container {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 992px) {
+    .container {
+      max-width: 970px;
+    }
+  }
+  
+  /* Large desktop styles */
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1170px;
+    }
+  }
